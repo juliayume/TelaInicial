@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@900&display=swap');
+
+body, html{
+    margin: 0%;
+    padding: 0%;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('../TelaIInicial/Assets/Background.png');
+    background-size: cover;
+    background-color: #000874;
+    position: fixed;
+    z-index: 10;
+}
+
+.title {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 280%;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MENU */
+
+a {text-decoration: none;}
+
+.container {
+  margin: auto;
+  width: 100%;
+  height: 11%;
+}
+
+ul {
+  padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  list-style: none;
+}
+
+nav {
+  background: #00043C;
+  font-size: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+nav > ul > li {
+  display: inline-block;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+nav > ul > li > a {
+  color: #fff;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease;
+}
+nav > ul > li:hover > a {
+  color: rgb(255, 255, 255); 
+    border-bottom: 3px solid rgb(48, 27, 240);
+}
+
+.mega-menu {
+    background: #eee;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.mega-menu h3 {color: #444;}
+
+.mega-menu .container {
+    display: flex;
+}
+.mega-menu .item {
+  flex-grow: 1;
+    margin: 0 10px;
+}
+.mega-menu .item img {
+    width: 100%;
+}
+.mega-menu a {
+  border-bottom: 1px solid #ddd;
+    color: #4ea3d8;
+    display: block;
+    padding: 10px 0;
+}
+.mega-menu a:hover {color: #2d6a91;}
+
+
+.dropdown {position: static;}
+
+.dropdown:hover .mega-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* BUTTON */
+
+button {
+    margin:auto;
+    display:block;
+    padding: 1.3em 3em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #00043C;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #e3e7f8;
+    box-shadow: 0px 15px 20px rgba(46, 58, 229, 0.4);
+    font-family: 'Nunito Sans', sans-serif;
+    color: #000000;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
